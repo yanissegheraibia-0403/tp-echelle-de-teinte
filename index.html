@@ -108,6 +108,10 @@ button.check{border-style:dashed}
 .sol{margin:0;display:grid;justify-items:center;gap:4px;padding-bottom:8px}
 .sol figcaption{display:grid;justify-items:center;font-size:.85rem;line-height:1.3;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:2px 8px}
 
+.dl{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;padding:10px 16px;border-radius:6px}
+.dl:hover{filter:brightness(1.08)}
+.dl:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
 /* Paillasse virtuelle */
 .bench{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .bench-title{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 16px;border-bottom:1px solid var(--line);font-family:var(--f-data);font-size:.8rem;color:var(--muted);letter-spacing:.04em}
@@ -181,7 +185,7 @@ footer{padding-top:40px;color:var(--muted);font-size:.85rem}
 <header class="top">
   <span class="eyebrow">Seconde · Physique-chimie · Ch. 2 Composition des solutions aqueuses · TP à distance</span>
   <h1>Dosage par étalonnage : l'échelle de teinte</h1>
-  <p class="lead">Tu vas préparer virtuellement une gamme de solutions de sulfate de cuivre, puis t'en servir pour retrouver la concentration d'une solution inconnue. Durée prévue : 1 h 30 à 2 h. Garde une copie et un brouillon à côté de toi : ton compte rendu sera rédigé sur papier.</p>
+  <p class="lead">Tu vas préparer virtuellement une gamme de solutions de sulfate de cuivre, puis t'en servir pour retrouver la concentration d'une solution inconnue. Durée prévue : 1 h 30 à 2 h. Télécharge d'abord le compte rendu Word (en bas de page) : tu le rempliras au fur et à mesure.</p>
   <div class="ident">
     <label for="who-name">Nom et prénom<input type="text" id="who-name" autocomplete="name"></label>
     <label for="who-class">Classe<input type="text" id="who-class" style="width:7em"></label>
@@ -461,24 +465,24 @@ footer{padding-top:40px;color:var(--muted);font-size:.85rem}
 
 <!-- COMPTE RENDU -->
 <section class="part">
-  <div class="part-head"><span class="eyebrow">À rendre</span><h2>Ton compte rendu sur papier</h2></div>
-  <p>Rédige ton compte rendu <b>à la main, sur une copie</b>. Les cases de cette page te servent de brouillon et pour les vérifications ; elles ne sont pas envoyées à ton professeur.</p>
+  <div class="part-head"><span class="eyebrow">À rendre</span><h2>Ton compte rendu sur ordinateur</h2></div>
+  <p>Ton compte rendu se fait dans un document Word fourni. Télécharge-le <b>avant de commencer le TP</b> et garde-le ouvert à côté de cette page : tu y écriras tes réponses au fur et à mesure.</p>
+  <p><a class="dl" href="compte-rendu-TP-echelle-de-teinte.docx" download>Télécharger le compte rendu (Word, .docx)</a></p>
   <div class="stack">
-    <h3>Ce que ta copie doit contenir</h3>
-    <ul class="plain">
-      <li>En haut : ton nom, ta classe et le code de ton échantillon <span class="code-chip code-inline2">X-00</span>.</li>
-      <li>Les réponses aux questions Q1 à Q11, numérotées, avec les calculs détaillés et les unités.</li>
-      <li>Le tableau de la partie 2 recopié et complété (V<sub>0</sub>, F et C<sub>m</sub>).</li>
-      <li>Les volumes que tu as <b>réellement</b> prélevés pour chaque tube, y compris les tubes 7 et 8 (relis le cahier de manipulation de la paillasse 2).</li>
-      <li>Un schéma légendé d'une dilution : pipette, fiole jaugée de 50 mL, trait de jauge.</li>
-    </ul>
+    <h3>Comment le compléter</h3>
+    <ol class="steps">
+      <li>Ouvre le fichier avec Word, LibreOffice Writer ou Google Docs (Fichier &gt; Ouvrir &gt; Importer).</li>
+      <li>Remplis l'en-tête : nom, prénom, classe et le code de ton échantillon <span class="code-chip code-inline2">X-00</span>.</li>
+      <li>Écris chaque réponse dans le cadre blanc prévu, en effaçant le texte gris. Détaille les calculs : formule, application numérique, résultat avec unité.</li>
+      <li>Recopie les volumes que tu as réellement prélevés pour chaque tube (cahier de manipulation de la paillasse 2).</li>
+      <li>Colle une capture d'écran du portoir avec le tube X à sa place, dans le cadre prévu en partie 3.</li>
+    </ol>
   </div>
   <div class="stack">
     <h3>Comment le rendre</h3>
     <ol class="steps">
-      <li>Scanne ta copie avec ton téléphone (application de numérisation ou appareil photo, page bien à plat et éclairée). Toutes les pages doivent être lisibles.</li>
-      <li>Enregistre-la en un seul fichier PDF nommé <span class="mono">NOM_Prenom_TP-echelle-teinte.pdf</span>.</li>
-      <li>Dépose ce fichier dans le <b>dossier partagé de la classe</b>.</li>
+      <li>Enregistre le fichier sous le nom <span class="mono">NOM_Prenom_TP-echelle-teinte.docx</span>.</li>
+      <li>Dépose-le dans le <b>dossier partagé de la classe</b>.</li>
     </ol>
   </div>
 </section>
